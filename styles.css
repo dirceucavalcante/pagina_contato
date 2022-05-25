@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+    color:rgba(250, 220, 52); 
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+ul{
+    list-style: none;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: url(./pexels-suzy-hazelwood-1629236.jpg) no-repeat center center fixed;
+    background-size: cover;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px rgb(91, 6, 170);
+    margin-bottom: 45px;
+}
+
+header ul{
+    display: flex;
+    
+}
+
+header ul li{
+    padding: 10px;
+    box-shadow: 1px 1px 5px 1px rgb(91, 6, 170);
+}
+
+header ul li a{
+    transition: 400ms;
+}
+
+header ul li a:hover{
+    color: rgba(0, 255, 255, 0.712);
+    text-decoration: underline;
+}
+
+.container{
+    text-align: center;
+}
+
+.container .nome h1{
+    font-size: 60px;
+}
+
+.container .nome h5{
+    font-size: 30px;
+}
+
+#arrow{
+    font-size: 30px;
+    cursor: pointer;
+    animation: blink .5s steps(5,start) infinite;
+}
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation{
+    transition: 400ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 400ms;
+}
+
+.active {
+    display: block !important;
+}
+
+#about p{
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-style: italic;
+    
+    
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    /*border: thick double rgb(129, 29, 223);*/
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.form input{
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    margin-top: 15px;
+    color: black;
+}
+
+.form button{
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, rgba(0, 255, 255, 0.712) 50%, rgb(91, 6, 170) 50%) ;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 400ms ease-out;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+    margin-top: 15px;
+}
+.form button:hover{
+    
+    background-position: left bottom;
+    color:rgb(91, 6, 170);
+}
+
+@media only screen and (max-width: 768px){
+    .form{
+        width: 100%;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container .nome h1{
+        font-size: 30px;
+    }
+    .container .nome h5{
+        font-size: 15px;
+    }
+    #about p {
+        font-size: 10px;
+        max-width: 80%;
+        text-align: justify;
+    }
+    img{
+        max-width: 75px;
+        max-height: 75px;
+    }
+    ul{
+        font-size: 13px;
+    }
+}
